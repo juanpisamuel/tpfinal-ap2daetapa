@@ -11,9 +11,16 @@ body {
 
 }
 .fondo{
-  background-color: rgb(241, 228, 212);
-}
-
+    background: linear-gradient(to bottom, #DFF0D8, #C1E1C5);
+    /* Otros estilos si es necesario */
+    color: #333; /* Ajusta el color del texto según sea necesario */
+    min-height: 100vh; /* Asegura que el degradado cubra al menos toda la altura de la pantalla */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
 
   .container {
     max-width: 400px;
@@ -40,13 +47,15 @@ form {
 .nuevaTarea{
   margin-left: 5px;
   margin-right: 5px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .listTask {
   font-size: medium;
   text-decoration:underline;
-  color: #972828;
+  color: #070707;
   font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
 
@@ -55,10 +64,14 @@ form {
   margin-top: 15px;
   text-align: center;
   padding: 10px;
-  background-color: #000000;
+  background-color: rgb(94, 197, 94);
   bottom: 0;
   width: 100%;
   text-decoration: double;
-  color: #ddd;
+  color: #faf4f4;
   border-radius: 15px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border: 2px solid rgb(162, 236, 155); 
+  font-weight: bold;
 }
+

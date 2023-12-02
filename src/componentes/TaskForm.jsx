@@ -14,17 +14,21 @@ const TaskForm = ({ onAddTask }) => {
   };
 
   return (
+    <div className='tareas'>
     <form onSubmit={handleSubmit}>
-      <input
+      <input 
+       
         type="text"
-        placeholder="Nueva tarea"
+        placeholder="Nueva tarea" required
         className='nuevaTarea'
         value={taskName}
         onChange={handleInputChange}
       />
-      <button type="submit" className="btn btn-secondary btn-sm">Agregar Tarea</button>
+      <button type="submit" className="btn btn-secondary btn-sm"
+          style={{ marginLeft: '10px', marginTop: '10px', marginBottom: '10px' }}>Agregar Tarea</button>
 
     </form>
+    </div>
   );
 };
 
